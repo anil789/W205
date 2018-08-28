@@ -1,0 +1,17 @@
+{
+  "name" : "F1",
+  "routeSpecs" : [
+    {
+      "path" : "/svc/App1/S2/api/companies",
+      "location" : "https://uat7.datacubes.io",
+      "secure" : true,
+      "securityPolicies" : "P1,P2,P3"
+    },
+    {
+      "path" : "/svc/App1/S2/api/overview",
+      "location" : "https://uat7.datacubes.io",
+      "secure" : true,
+      "securityPolicies" : "P2,P1,P4"
+    }
+  ]
+}

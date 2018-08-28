@@ -1,0 +1,7 @@
+{
+  "name" : "P1",
+  "roles" : "Admin",
+  "roleGroupOperator" : "or",
+  "groups" : "OperationDept",
+  "actions" : "Read"
+}

@@ -1,0 +1,97 @@
+{
+  "name" : "T3",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true
+    },
+    {
+      "name" : "orgName",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true
+    }
+  ],
+  "nameInDS" : "T3_tbl",
+  "primaryKeyGenerator" : "serial",
+  "routeSpecs" : [
+    {
+      "location" : "/ds/delete/App1/db1/T3",
+      "path" : "/ds/delete/App1/db1/T3",
+      "secure" : true,
+      "securityPolicies" : "P2"
+    },
+    {
+      "location" : "/ds/deleteAll/App1/db1/T3",
+      "path" : "/ds/deleteAll/App1/db1/T3",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/deleteByQuery/App1/db1/T3",
+      "path" : "/ds/deleteByQuery/App1/db1/T3",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/object/App1/db1/T3",
+      "path" : "/ds/object/App1/db1/T3",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/objects/App1/db1/T3",
+      "path" : "/ds/objects/App1/db1/T3",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/objectsbyquery/App1/db1/T3",
+      "path" : "/ds/objectsbyquery/App1/db1/T3",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/page/App1/db1/T3",
+      "path" : "/ds/page/App1/db1/T3",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/save/App1/db1/T3",
+      "path" : "/ds/save/App1/db1/T3",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/saveAll/App1/db1/T3",
+      "path" : "/ds/saveAll/App1/db1/T3",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/update/App1/db1/T3",
+      "path" : "/ds/update/App1/db1/T3",
+      "secure" : true
+    }
+  ],
+  "tableCreateable" : true
+}

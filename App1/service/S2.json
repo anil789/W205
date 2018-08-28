@@ -1,0 +1,30 @@
+{
+  "name" : "S2",
+  "props" : {
+    "deployParameters" : {
+      "target" : "AWS",
+      "DockerImage" : "abcdef",
+      "DockerContainerPort" : "5003",
+      "DesiredCount" : "2"
+    }
+  },
+  "type" : "trilloMicroService",
+  "useOAuth" : false,
+  "docUrl" : "/_model/api-service/App1/S2",
+  "routeSpecs" : [
+    {
+      "path" : "/svc/App1/S2/api/companies",
+      "location" : "https://uat7.datacubes.io",
+      "secure" : true,
+      "securityPolicies" : "P1,P2"
+    },
+    {
+      "path" : "/svc/App1/S2/api/overview",
+      "location" : "https://uat7.datacubes.io",
+      "secure" : true,
+      "securityPolicies" : "P2,P1,P3"
+    }
+  ],
+  "useHttps" : false,
+  "trilloService" : true
+}

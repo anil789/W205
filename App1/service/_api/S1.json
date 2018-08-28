@@ -1,0 +1,140 @@
+{
+  "paths" : {
+    "/api/companies" : {
+      "post" : {
+        "tags" : [
+          "D3_API"
+        ],
+        "summary" : "Search Companies",
+        "operationId" : "SearchUsingPOST",
+        "consumes" : [
+          "application/json"
+        ],
+        "produces" : [
+          "application/json"
+        ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "required" : true,
+            "schema" : {
+              "$ref" : "#/definitions/SearchRequest"
+            }
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "type" : "object"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Forbidden"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [
+          {
+            "d3_auth" : [ ]
+          }
+        ]
+      }
+    },
+    "/api/overview" : {
+      "get" : {
+        "tags" : [
+          "D3_API"
+        ],
+        "summary" : "Search Companies",
+        "operationId" : "GetCompanyUsingGet",
+        "produces" : [
+          "application/json"
+        ],
+        "parameters" : [
+          {
+            "name" : "company_id",
+            "in" : "query",
+            "required" : true,
+            "type" : "string",
+            "description" : "Company Id",
+            "x-example" : "d8331bb7-a523-5eb6-86d8-a6b6fcaf07d9"
+          },
+          {
+            "name" : "views",
+            "in" : "query",
+            "required" : false,
+            "type" : "string",
+            "description" : "Views",
+            "x-example" : "d3Company,d3PreFill"
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "type" : "object"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Forbidden"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [
+          {
+            "d3_auth" : [ ]
+          }
+        ]
+      }
+    }
+  },
+  "host" : "uat7.datacubes.io",
+  "schemes" : [
+    "https"
+  ],
+  "securityDefinitions" : {
+    "d3_auth" : {
+      "type" : "oauth2",
+      "tokenUrl" : "https://uat7.datacubes.io/auth/realms/datacubes/protocol/openid-connect/token",
+      "flow" : "password",
+      "scopes" : { }
+    }
+  },
+  "definitions" : {
+    "SearchRequest" : {
+      "type" : "object",
+      "properties" : {
+        "company_name" : {
+          "type" : "string"
+        },
+        "zip5" : {
+          "type" : "string"
+        }
+      }
+    }
+  },
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Api Documentation",
+    "version" : "1.0",
+    "title" : "Api Documentation",
+    "termsOfService" : "urn:tos",
+    "contact" : { },
+    "license" : {
+      "name" : "Apache 2.0",
+      "url" : "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  }
+}

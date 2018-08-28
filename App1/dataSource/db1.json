@@ -1,0 +1,6 @@
+{
+  "name" : "db1",
+  "type" : "mysql",
+  "useDefault" : true,
+  "properties" : { }
+}

@@ -1,0 +1,28 @@
+{
+  "name" : "F1",
+  "type" : "form",
+  "apiSpec" : {
+    "serviceUrl" : "/ds/objectsbyquery/App1/db1/T1",
+    "query" : "query={{{query}}}",
+    "method" : "get"
+  },
+  "fieldSpecs" : [
+    {
+      "name" : "Text_1",
+      "cssClass" : "form-group",
+      "editable" : true,
+      "type" : "text"
+    },
+    {
+      "name" : "Text_2",
+      "cssClass" : "form-group",
+      "editable" : true,
+      "type" : "text"
+    }
+  ],
+  "css" : {
+    "width" : "300px",
+    "padding" : "10px"
+  },
+  "cssClass" : "trillo-form"
+}

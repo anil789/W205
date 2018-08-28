@@ -1,0 +1,114 @@
+{
+  "name" : "T1",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true,
+      "securityPolicies" : "P1"
+    },
+    {
+      "name" : "P2",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true
+    },
+    {
+      "name" : "orgName",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true
+    },
+    {
+      "name" : "id2",
+      "type" : "longstring",
+      "persistent" : true,
+      "securityPolicies" : "P2"
+    },
+    {
+      "name" : "id3",
+      "type" : "longstring",
+      "persistent" : true,
+      "securityPolicies" : "P2"
+    }
+  ],
+  "nameInDS" : "T1_tbl",
+  "primaryKeyGenerator" : "serial",
+  "routeSpecs" : [
+    {
+      "location" : "/ds/delete/App1/db1/T1",
+      "path" : "/ds/delete/App1/db1/T1",
+      "secure" : true,
+      "securityPolicies" : "P1"
+    },
+    {
+      "location" : "/ds/deleteAll/App1/db1/T1",
+      "path" : "/ds/deleteAll/App1/db1/T1",
+      "secure" : true,
+      "securityPolicies" : "P2"
+    },
+    {
+      "location" : "/ds/deleteByQuery/App1/db1/T1",
+      "path" : "/ds/deleteByQuery/App1/db1/T1",
+      "secure" : true,
+      "securityPolicies" : "P1,P2"
+    },
+    {
+      "location" : "/ds/object/App1/db1/T1",
+      "path" : "/ds/object/App1/db1/T1",
+      "secure" : true,
+      "securityPolicies" : "P3"
+    },
+    {
+      "location" : "/ds/objects/App1/db1/T1",
+      "path" : "/ds/objects/App1/db1/T1",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/objectsbyquery/App1/db1/T1",
+      "path" : "/ds/objectsbyquery/App1/db1/T1",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/page/App1/db1/T1",
+      "path" : "/ds/page/App1/db1/T1",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/save/App1/db1/T1",
+      "path" : "/ds/save/App1/db1/T1",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/saveAll/App1/db1/T1",
+      "path" : "/ds/saveAll/App1/db1/T1",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/update/App1/db1/T1",
+      "path" : "/ds/update/App1/db1/T1",
+      "secure" : true
+    }
+  ],
+  "securityPolicies" : "P1,P2,P4",
+  "tableCreateable" : true
+}
