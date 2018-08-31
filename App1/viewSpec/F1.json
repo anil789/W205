@@ -8,13 +8,15 @@
   },
   "fieldSpecs" : [
     {
-      "name" : "Text_1",
+      "name" : "Text_3",
+      "displayName" : "Text_3",
       "cssClass" : "form-group",
       "editable" : true,
       "type" : "text"
     },
     {
       "name" : "Text_2",
+      "displayName" : "Text_2",
       "cssClass" : "form-group",
       "editable" : true,
       "type" : "text"

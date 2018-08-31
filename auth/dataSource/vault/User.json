@@ -208,5 +208,57 @@
   "displayName" : "trillo.user_tbl",
   "nameInDS" : "user_tbl",
   "primaryKeyGenerator" : "serial",
+  "routeSpecs" : [
+    {
+      "location" : "/ds/delete/auth/vault/User",
+      "path" : "/ds/delete/auth/vault/User",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/deleteAll/auth/vault/User",
+      "path" : "/ds/deleteAll/auth/vault/User",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/deleteByQuery/auth/vault/User",
+      "path" : "/ds/deleteByQuery/auth/vault/User",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/object/auth/vault/User",
+      "path" : "/ds/object/auth/vault/User",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/objects/auth/vault/User",
+      "path" : "/ds/objects/auth/vault/User",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/objectsbyquery/auth/vault/User",
+      "path" : "/ds/objectsbyquery/auth/vault/User",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/page/auth/vault/User",
+      "path" : "/ds/page/auth/vault/User",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/save/auth/vault/User",
+      "path" : "/ds/save/auth/vault/User",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/saveAll/auth/vault/User",
+      "path" : "/ds/saveAll/auth/vault/User",
+      "secure" : true
+    },
+    {
+      "location" : "/ds/update/auth/vault/User",
+      "path" : "/ds/update/auth/vault/User",
+      "secure" : true
+    }
+  ],
   "tableCreateable" : true
 }

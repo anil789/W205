@@ -1,0 +1,5 @@
+{
+  "name" : "Nav2",
+  "type" : "nav",
+  "cssClass" : "nav nav-pills has-drop-zone"
+}
