@@ -22,7 +22,9 @@
     {
       "name" : "home_",
       "displayName" : "Home",
-      "actionSpec" : { },
+      "actionSpec" : {
+        "type" : "view"
+      },
       "type" : "menuItem"
     },
     {
