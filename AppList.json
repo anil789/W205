@@ -1,7 +1,10 @@
 [
   {
     "appTemplate" : "webapp",
-    "displayName" : "App1",
+    "description" : "App1",
+    "displayName" : "App1 - W205",
+    "htmlHeadTitle" : "App1",
+    "keywords" : "App1",
     "linkedApp" : "shared",
     "metaDataPubliclyViewable" : false,
     "name" : "App1",
