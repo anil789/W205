@@ -9,7 +9,7 @@
       "securityPolicies" : "P1"
     },
     {
-      "name" : "P2",
+      "name" : "name",
       "type" : "string",
       "persistent" : true
     },
@@ -40,13 +40,13 @@
     },
     {
       "name" : "id2",
-      "type" : "longstring",
+      "type" : "long",
       "persistent" : true,
       "securityPolicies" : "P2"
     },
     {
       "name" : "id3",
-      "type" : "longstring",
+      "type" : "long",
       "persistent" : true,
       "securityPolicies" : "P2"
     }

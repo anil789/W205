@@ -4,38 +4,56 @@
   "fieldSpecs" : [
     {
       "name" : "country",
-      "displayName" : "Country",
+      "cssClass" : "form-group",
+      "type" : "text"
+    },
+    {
+      "name" : "Text_1",
+      "displayName" : "Text_1",
+      "cssClass" : "form-group",
+      "editable" : true,
       "type" : "text"
     },
     {
       "name" : "animal",
-      "displayName" : "Animal",
+      "cssClass" : "form-group",
       "editable" : true,
       "type" : "text"
     },
     {
       "name" : "plant",
-      "displayName" : "Plant",
+      "cssClass" : "form-group",
       "editable" : true,
       "type" : "text"
     },
     {
       "name" : "official",
-      "displayName" : "Official",
+      "cssClass" : "form-group form-check",
       "editable" : true,
       "type" : "checkbox"
     },
     {
       "name" : "close",
-      "displayName" : "Close",
-      "editable" : true,
+      "cssClass" : "btn btn-primary",
+      "css" : {
+        "margin" : "5px"
+      },
+      "html" : "\n        Close\n      ",
       "type" : "button"
     },
     {
       "name" : "ok",
-      "displayName" : "OK",
-      "editable" : true,
+      "cssClass" : "btn btn-primary",
+      "css" : {
+        "margin" : "5px"
+      },
+      "html" : "\n        OK\n      ",
       "type" : "button"
     }
-  ]
+  ],
+  "css" : {
+    "max-width" : "400px",
+    "padding" : "10px"
+  },
+  "cssClass" : "trillo-form"
 }
